@@ -1,0 +1,47 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.table td {
+    word-break: break-word;
+
+    & img {
+        max-width: 100%;
+    }
+}
+
+.table th,
+.table td
+{
+    &.actions {
+        width: 100px;
+        & .btn {
+            width: 100%;
+        }
+    }
+
+    & .btn:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.news-item:not(:last-child) {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 20px;
+}
+
+.news-item a:hover {
+    text-decoration: none;
+}
+
+.news-detail-body {
+    & img {
+        max-width: 100%;
+    }
+}
